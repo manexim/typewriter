@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Typewriter
+GenericName=Typewriter
+Comment=A minimal writer with autosave
+Exec=com.github.manexim.typewriter
+Icon=com.github.manexim.typewriter
+Categories=GNOME;GTK;Office;
+X-GNOME-UsesNotifications=false

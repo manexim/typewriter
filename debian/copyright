@@ -1,0 +1,7 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: com.github.manexim.typewriter
+Source: https://github.com/manexim/typewriter
+
+Files: src/* data/* debian/*
+Copyright: 2019 Marius Meisenzahl <mariusmeisenzahl@gmail.com>
+License: GPL-3.0+
