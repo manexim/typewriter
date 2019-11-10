@@ -59,10 +59,10 @@ If you want to contribute to typewriter and make it better, your help is very we
 
 -   Create a personal fork of this project on GitHub.
 -   Clone the fork on your local machine. Your remote repo on GitHub is called `origin`.
--   Create a new branch to work on. Branch from `develop`!
+-   Create a new branch to work on. Branch from `master`!
 -   Implement/fix your feature.
 -   Push your branch to your fork on GitHub, the remote `origin`.
--   From your fork open a pull request in the correct branch. Target the `develop` branch!
+-   From your fork open a pull request in the correct branch. Target the `master` branch!
 
 And last but not least: Always write your commit messages in the present tense.
 Your commit message should describe what the commit, when applied, does to the code – not what you did to the code.
