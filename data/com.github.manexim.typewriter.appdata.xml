@@ -16,6 +16,11 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2020-02-08" version="0.2.0">
+      <description>
+        <p>Use bottom bar instead of overlay</p>
+      </description>
+    </release>
     <release date="2020-02-08" version="0.1.2">
       <description>
         <p>Update icon branding</p>
