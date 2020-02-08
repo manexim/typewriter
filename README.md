@@ -1,5 +1,5 @@
 <div align="center">
-  <span align="center"> <img width="80" height="80" class="center" src="data/icons/com.github.manexim.typewriter.svg" alt="Icon"></span>
+  <span align="center"> <img width="80" height="80" class="center" src="data/icons/128/com.github.manexim.typewriter.svg" alt="Icon"></span>
   <h1 align="center">Typewriter</h1>
   <h3 align="center">A minimal writer with autosave</h3>
   <p align="center">Designed for <a href="https://elementary.io">elementary OS</a></p>
