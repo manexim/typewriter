@@ -19,26 +19,29 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Views.TypewriterView : Gtk.ScrolledWindow {
+public class Views.TypewriterView : Gtk.Grid {
     private Models.Typewriter model;
-    private Granite.Widgets.OverlayBar overlaybar;
+    private Gtk.Label label;
 
     public TypewriterView (Models.Typewriter model) {
         this.model = model;
 
-        var overlay = new Gtk.Overlay ();
-        add (overlay);
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.expand = true;
+        scrolled.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
 
         var editor = new Gtk.SourceView.with_buffer (model.buffer);
         editor.set_wrap_mode (Gtk.WrapMode.WORD);
-        editor.top_margin = 40;
-        editor.left_margin = 40;
-        editor.right_margin = 40;
-        editor.bottom_margin = 40;
-        editor.auto_indent = true;
-        overlay.add (editor);
+        editor.margin = 40;
+        scrolled.add (editor);
 
-        overlaybar = new Granite.Widgets.OverlayBar (overlay);
+        label = new Gtk.Label ("");
+        label.margin = 6;
+        label.halign = Gtk.Align.END;
+
+        attach (scrolled, 0, 0, 1, 1);
+        attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1, 1, 1);
+        attach (label, 0, 2, 1, 1);
 
         model.notify.connect (update);
 
@@ -46,7 +49,7 @@ public class Views.TypewriterView : Gtk.ScrolledWindow {
     }
 
     private void update () {
-        overlaybar.label = "%u characters • %u words • %u min read".printf (
+        label.label = "%u characters • %u words • %u min read".printf (
             model.characters, model.words, model.read_time
         );
     }
