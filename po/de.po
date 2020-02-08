@@ -1,7 +1,7 @@
 # German translations for com.github.manexim.typewriter package.
 # Copyright (C) 2020 THE com.github.manexim.typewriter'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.manexim.typewriter package.
-# Automatically generated, 2020.
+# Marius Meisenzahl <mariusmeisenzahl@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-08 13:58+0100\n"
 "PO-Revision-Date: 2020-02-08 13:43+0100\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: Marius Meisenzahl <mariusmeisenzahl@gmail.com>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
