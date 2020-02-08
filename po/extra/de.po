@@ -1,0 +1,57 @@
+# German translations for extra package.
+# Copyright (C) 2020 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 13:58+0100\n"
+"PO-Revision-Date: 2020-02-08 13:54+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:7
+#: data/com.github.manexim.typewriter.desktop.in:4
+#: data/com.github.manexim.typewriter.desktop.in:5
+msgid "Typewriter"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:8
+#: data/com.github.manexim.typewriter.desktop.in:6
+msgid "A minimal writer with autosave"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:10
+msgid "Get lost in typing and don't worry about losing your precious work."
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:21
+msgid "Use bottom bar instead of overlay"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:26
+msgid "Update icon branding"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:31
+msgid "Update icon"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:36
+msgid "Initial release"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:46
+msgid "Manexim"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.desktop.in:8
+msgid "com.github.manexim.typewriter"
+msgstr ""

@@ -49,8 +49,10 @@ public class Views.TypewriterView : Gtk.Grid {
     }
 
     private void update () {
-        label.label = "%u characters • %u words • %u min read".printf (
-            model.characters, model.words, model.read_time
+        label.label = "%s • %s • %s".printf (
+            _("%u characters").printf (model.characters),
+            _("%u words").printf (model.words),
+            _("%u min read").printf (model.read_time)
         );
     }
 }

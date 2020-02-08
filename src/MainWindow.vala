@@ -62,8 +62,10 @@ public class MainWindow : Gtk.ApplicationWindow {
     }
 
     private void update () {
-        headerbar.subtitle = "%u characters • %u words • %u min read".printf (
-            typewriter.model.characters, typewriter.model.words, typewriter.model.read_time
+        headerbar.subtitle = "%s • %s • %s".printf (
+            _("%u characters").printf (typewriter.model.characters),
+            _("%u words").printf (typewriter.model.words),
+            _("%u min read").printf (typewriter.model.read_time)
         );
     }
 
