@@ -73,6 +73,7 @@ Your commit message should describe what the commit, when applied, does to the c
 
 | Name                                        | Language  |
 | ------------------------------------------- | --------- |
+| [NathanBnm](https://github.com/NathanBnm)   | French 🇫🇷 |
 | [meisenzahl](https://github.com/meisenzahl) | German 🇩🇪 |
 
 ## License
