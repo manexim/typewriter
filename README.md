@@ -6,6 +6,12 @@
 </div>
 
 <p align="center">
+  <a href="https://appcenter.elementary.io/com.github.manexim.typewriter" target="_blank">
+    <img src="https://appcenter.elementary.io/badge.svg">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://travis-ci.org/manexim/typewriter">
     <img src="https://img.shields.io/travis/manexim/typewriter.svg">
   </a>
