@@ -37,7 +37,7 @@
       <description>Autosave edited files.</description>
     </key>
     <key name="zoom" type="i">
-      <default>200</default>
+      <default>100</default>
       <summary>Zoom level.</summary>
       <description>Zoom level.</description>
     </key>
