@@ -37,6 +37,7 @@ public class Services.Settings : Granite.Services.Settings {
     public bool window_maximized { get; set; }
     public bool window_fullscreen { get; set; }
     public bool autosave { get; set; }
+    public int zoom { get; set; }
 
     private Settings () {
         base (Config.APP_ID);
