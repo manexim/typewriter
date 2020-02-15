@@ -21,10 +21,12 @@
 
 public class Views.TypewriterView : Gtk.Grid {
     private Models.Typewriter model;
+    private Models.Font font;
     private Gtk.Label label;
 
     public TypewriterView (Models.Typewriter model) {
         this.model = model;
+        font = Application.instance.font;
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
@@ -34,6 +36,11 @@ public class Views.TypewriterView : Gtk.Grid {
         editor.set_wrap_mode (Gtk.WrapMode.WORD);
         editor.margin = 40;
         scrolled.add (editor);
+
+        editor.override_font (Pango.FontDescription.from_string (font.font));
+        font.notify.connect (() => {
+            editor.override_font (Pango.FontDescription.from_string (font.font));
+        });
 
         label = new Gtk.Label ("");
         label.margin = 6;
