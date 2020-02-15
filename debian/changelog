@@ -1,3 +1,15 @@
+com.github.manexim.typewriter (0.3.0) bionic; urgency=medium
+
+[NEW]
+ * Add menu to set zoom level
+[IMPROVED]
+[FIXED]
+[TRANSLATIONS]
+ * French (by NathanBnm)
+ * German (by meisenzahl)
+
+ -- Marius Meisenzahl <mariusmeisenzahl@gmail.com>  Sat, 15 Feb 2020 13:20:34 +0100
+
 com.github.manexim.typewriter (0.2.0) bionic; urgency=medium
 
   * Use bottom bar instead of overlay

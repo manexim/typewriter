@@ -16,6 +16,25 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2020-02-15" version="0.3.0">
+      <description>
+        <p>New:</p>
+        <ul>
+         <li>Add menu to set zoom level</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+        </ul>
+        <p>Translations:</p>
+        <ul>
+          <li>French (by NathanBnm)</li>
+          <li>German (by meisenzahl)</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-02-08" version="0.2.0">
       <description>
         <p>Use bottom bar instead of overlay</p>

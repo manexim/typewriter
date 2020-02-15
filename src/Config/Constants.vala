@@ -23,7 +23,7 @@ namespace Config {
     public const string APP_ID = "com.github.manexim.typewriter";
     public const string APP_AUTHOR = "Manexim";
     public const string APP_NAME = "Typewriter";
-    public const string APP_VERSION = "0.2.0";
+    public const string APP_VERSION = "0.3.0";
 
     public const uint WORDS_PER_MINUTE = 265;
 }
