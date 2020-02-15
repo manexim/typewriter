@@ -34,6 +34,51 @@ public class MainWindow : Gtk.ApplicationWindow {
         headerbar.get_style_context ().add_class ("default-decoration");
         headerbar.show_close_button = true;
 
+        var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
+        zoom_out_button.clicked.connect (() => {
+            settings.zoom -= 10;
+        });
+
+        var zoom_default_button = new Gtk.Button.with_label ("%d%%".printf (settings.zoom));
+        zoom_default_button.clicked.connect (() => {
+            settings.zoom = 100;
+        });
+
+        settings.notify["zoom"].connect (() => {
+            zoom_default_button.label = "%d%%".printf (settings.zoom);
+        });
+
+        var zoom_in_button = new Gtk.Button.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU);
+        zoom_in_button.clicked.connect (() => {
+            settings.zoom += 10;
+        });
+
+        var font_size_grid = new Gtk.Grid ();
+        font_size_grid.column_homogeneous = true;
+        font_size_grid.hexpand = true;
+        font_size_grid.margin = 12;
+        font_size_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
+        font_size_grid.add (zoom_out_button);
+        font_size_grid.add (zoom_default_button);
+        font_size_grid.add (zoom_in_button);
+
+        var menu_grid = new Gtk.Grid ();
+        menu_grid.margin_bottom = 3;
+        menu_grid.orientation = Gtk.Orientation.VERTICAL;
+        menu_grid.width_request = 200;
+        menu_grid.attach (font_size_grid, 0, 0, 3, 1);
+        menu_grid.show_all ();
+
+        var menu = new Gtk.Popover (null);
+        menu.add (menu_grid);
+
+        var app_menu = new Gtk.MenuButton ();
+        app_menu.image = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
+        app_menu.tooltip_text = _("Menu");
+        app_menu.popover = menu;
+
+        headerbar.pack_end (app_menu);
+
         set_titlebar (headerbar);
         title = Config.APP_NAME;
 

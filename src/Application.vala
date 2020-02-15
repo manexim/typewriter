@@ -20,13 +20,49 @@
 */
 
 public class Application : Granite.Application {
+    private static Application? _instance;
     private MainWindow window;
+    private Models.Font _default_font;
+    private Models.Font _current_font;
+    private Services.Settings settings;
 
-    public Application () {
+    public static Application instance {
+        get {
+            if (_instance == null) {
+                _instance = new Application ();
+            }
+
+            return _instance;
+        }
+    }
+
+    private Application () {
         Object (
             application_id: Config.APP_ID,
             flags: ApplicationFlags.FLAGS_NONE
         );
+
+        settings = Services.Settings.get_default ();
+
+        _default_font = new Models.Font ();
+        _current_font = new Models.Font ();
+
+        _default_font.font = new GLib.Settings ("org.gnome.desktop.interface").get_string ("font-name");
+        _current_font.font = _default_font.font;
+        _current_font.size = (int) (_default_font.size * settings.zoom / 100.0);
+
+        settings.notify["zoom"].connect (() => {
+            font.size = (int) (_default_font.size * settings.zoom / 100.0);
+        });
+    }
+
+    public Models.Font font {
+        owned get {
+            return _current_font;
+        }
+        set {
+            _current_font = value;
+        }
     }
 
     protected override void activate () {
@@ -36,7 +72,7 @@ public class Application : Granite.Application {
     }
 
     public static int main (string[] args) {
-        var app = new Application ();
+        var app = Application.instance;
 
         return app.run (args);
     }

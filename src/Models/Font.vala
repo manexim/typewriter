@@ -19,27 +19,33 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Services.Settings : Granite.Services.Settings {
-    private static Settings settings;
+public class Models.Font : Object {
+    private string _font;
 
-    public static Settings get_default () {
-        if (settings == null) {
-            settings = new Settings ();
+    public string font {
+        get {
+            return _font;
         }
-
-        return settings;
+        set {
+            _font = value;
+        }
     }
 
-    public int window_width { get; set; }
-    public int window_height { get; set; }
-    public int window_x { get; set; }
-    public int window_y { get; set; }
-    public bool window_maximized { get; set; }
-    public bool window_fullscreen { get; set; }
-    public bool autosave { get; set; }
-    public int zoom { get; set; }
+    public string family {
+        owned get {
+            return font.substring (0, font.last_index_of (" "));
+        }
+        set {
+            font = value + " " + size.to_string ();
+        }
+    }
 
-    private Settings () {
-        base (Config.APP_ID);
+    public int size {
+        get {
+            return int.parse (font.substring (font.last_index_of (" ") + 1));
+        }
+        set {
+            font = family + " " + value.to_string ();
+        }
     }
 }

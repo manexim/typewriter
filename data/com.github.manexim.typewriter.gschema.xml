@@ -33,8 +33,13 @@
     </key>
     <key name="autosave" type="b">
       <default>true</default>
-      <summary>Autosave edited files</summary>
+      <summary>Autosave edited files.</summary>
       <description>Autosave edited files.</description>
+    </key>
+    <key name="zoom" type="i">
+      <default>100</default>
+      <summary>Zoom level.</summary>
+      <description>Zoom level.</description>
     </key>
   </schema>
 </schemalist>

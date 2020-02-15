@@ -25,6 +25,16 @@
 
 <p align="center">
   <img src="data/screenshots/000.png">
+  <table>
+    <tr>
+      <td>
+        <img src="data/screenshots/001.png">
+      </td>
+      <td>
+        <img src="data/screenshots/002.png">
+      </td>
+    </tr>
+  </table>
 </p>
 
 ## Installation
