@@ -20,10 +20,14 @@
 */
 
 public class Controllers.TypewriterController {
+    private Services.Settings settings;
+
     public Models.Typewriter model;
     public Views.TypewriterView view;
 
     public TypewriterController () {
+        settings = Services.Settings.get_default ();
+
         model = new Models.Typewriter ();
         load ();
 
@@ -33,21 +37,23 @@ public class Controllers.TypewriterController {
     }
 
     public void save () {
-        var file = new Gtk.SourceFile ();
+        if (settings.autosave) {
+            var file = new Gtk.SourceFile ();
 
-        try {
-            if (!model.directory.query_exists ()) {
-                model.directory.make_directory_with_parents ();
+            try {
+                if (!model.directory.query_exists ()) {
+                    model.directory.make_directory_with_parents ();
+                }
+                file.location = model.file;
+
+                if (file != null && !file.is_readonly ()) {
+
+                    var file_saver = new Gtk.SourceFileSaver (model.buffer as Gtk.SourceBuffer, file);
+                    file_saver.save_async.begin (Priority.DEFAULT, null, null);
+                }
+            } catch (Error e) {
+                stderr.printf ("Could not autosave: %s\n", e.message);
             }
-            file.location = model.file;
-
-            if (file != null && !file.is_readonly ()) {
-
-                var file_saver = new Gtk.SourceFileSaver (model.buffer as Gtk.SourceBuffer, file);
-                file_saver.save_async.begin (Priority.DEFAULT, null, null);
-            }
-        } catch (Error e) {
-            stderr.printf ("Could not autosave: %s\n", e.message);
         }
     }
 
