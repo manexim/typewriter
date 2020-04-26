@@ -1,0 +1,58 @@
+# Italian translations for extra package.
+# Copyright (C) 2020 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Mirko Brombin <send@mirko.pm>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-26 16:38+0000\n"
+"PO-Revision-Date: 2020-04-26 16:47+0200\n"
+"Last-Translator: Mirko Brombin <send@mirko.pm>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:7
+#: data/com.github.manexim.typewriter.desktop.in:4
+#: data/com.github.manexim.typewriter.desktop.in:5
+msgid "Typewriter"
+msgstr "Typewriter"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:8
+#: data/com.github.manexim.typewriter.desktop.in:6
+msgid "A minimal writer with autosave"
+msgstr "Una applicazione minimale per la scrittura con auto salvataggio"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:10
+msgid "Get lost in typing and don't worry about losing your precious work."
+msgstr "Perditi nella scrittura e non preoccuparti più di perdere la concentrazione sul lavoro."
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:21
+msgid "Use bottom bar instead of overlay"
+msgstr "Usa la barra sotto anzichè l'overlay"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:26
+msgid "Update icon branding"
+msgstr "Aggiornato l'icona del brand"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:31
+msgid "Update icon"
+msgstr "Aggiornata l'icona"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:36
+msgid "Initial release"
+msgstr "Versione iniziale"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:46
+msgid "Manexim"
+msgstr "Manexim"
+
+#: data/com.github.manexim.typewriter.desktop.in:8
+msgid "com.github.manexim.typewriter"
+msgstr "com.github.manexim.typewriter"
