@@ -26,6 +26,7 @@ public class MainWindow : Gtk.ApplicationWindow {
 
     public MainWindow (Gtk.Application application) {
         this.application = application;
+        get_style_context().add_class("rounded");
 
         settings = Services.Settings.get_default ();
         load_settings ();
