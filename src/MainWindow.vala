@@ -30,9 +30,10 @@ public class MainWindow : Gtk.ApplicationWindow {
         settings = Services.Settings.get_default ();
         load_settings ();
 
-        headerbar = new Gtk.HeaderBar ();
+        headerbar = new Gtk.HeaderBar () {
+            show_close_button = true
+        };
         headerbar.get_style_context ().add_class ("default-decoration");
-        headerbar.show_close_button = true;
 
         var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
         zoom_out_button.clicked.connect (() => {
@@ -53,29 +54,32 @@ public class MainWindow : Gtk.ApplicationWindow {
             settings.zoom += 10;
         });
 
-        var font_size_grid = new Gtk.Grid ();
-        font_size_grid.column_homogeneous = true;
-        font_size_grid.hexpand = true;
-        font_size_grid.margin = 12;
+        var font_size_grid = new Gtk.Grid () {
+            column_homogeneous = true,
+            hexpand = true,
+            margin = 12
+        };
         font_size_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
         font_size_grid.add (zoom_out_button);
         font_size_grid.add (zoom_default_button);
         font_size_grid.add (zoom_in_button);
 
-        var menu_grid = new Gtk.Grid ();
-        menu_grid.margin_bottom = 3;
-        menu_grid.orientation = Gtk.Orientation.VERTICAL;
-        menu_grid.width_request = 200;
+        var menu_grid = new Gtk.Grid () {
+            margin_bottom = 3,
+            orientation = Gtk.Orientation.VERTICAL,
+            width_request = 200
+        };
         menu_grid.attach (font_size_grid, 0, 0, 3, 1);
         menu_grid.show_all ();
 
         var menu = new Gtk.Popover (null);
         menu.add (menu_grid);
 
-        var app_menu = new Gtk.MenuButton ();
-        app_menu.image = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR);
-        app_menu.tooltip_text = _("Menu");
-        app_menu.popover = menu;
+        var app_menu = new Gtk.MenuButton () {
+            image = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR),
+            tooltip_text = _("Menu"),
+            popover = menu
+        };
 
         headerbar.pack_end (app_menu);
 

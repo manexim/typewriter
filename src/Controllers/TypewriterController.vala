@@ -58,8 +58,9 @@ public class Controllers.TypewriterController {
     }
 
     public void load () {
-        var file = new Gtk.SourceFile ();
-        file.location = model.file;
+        var file = new Gtk.SourceFile () {
+            location = model.file
+        };
 
         if (file != null) {
             var file_saver = new Gtk.SourceFileLoader (model.buffer as Gtk.SourceBuffer, file);

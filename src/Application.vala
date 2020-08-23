@@ -44,12 +44,13 @@ public class Application : Granite.Application {
 
         settings = Services.Settings.get_default ();
 
-        _default_font = new Models.Font ();
-        _current_font = new Models.Font ();
-
-        _default_font.font = new GLib.Settings ("org.gnome.desktop.interface").get_string ("font-name");
-        _current_font.font = _default_font.font;
-        _current_font.size = (int) (_default_font.size * settings.zoom / 100.0);
+        _default_font = new Models.Font () {
+            font = new GLib.Settings ("org.gnome.desktop.interface").get_string ("font-name")
+        };
+        _current_font = new Models.Font () {
+            font = _default_font.font,
+            size = (int) (_default_font.size * settings.zoom / 100.0)
+        };
 
         settings.notify["zoom"].connect (() => {
             font.size = (int) (_default_font.size * settings.zoom / 100.0);
