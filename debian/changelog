@@ -1,3 +1,17 @@
+com.github.manexim.typewriter (0.3.2) bionic; urgency=medium
+
+[NEW]
+ * Add rounded window corners
+[IMPROVED]
+[FIXED]
+[TRANSLATIONS]
+ * French (by NathanBnm)
+ * German (by meisenzahl)
+ * Italian (by mirkobrombin)
+ * Spanish (by onerbs)
+
+-- Marius Meisenzahl <mariusmeisenzahl@gmail.com>  Sun, 23 Aug 2020 17:11:44 +0000
+
 com.github.manexim.typewriter (0.3.1) bionic; urgency=medium
 
 [NEW]
