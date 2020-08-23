@@ -87,10 +87,12 @@ Your commit message should describe what the commit, when applied, does to the c
 
 ### Translators
 
-| Name                                        | Language  |
-| ------------------------------------------- | --------- |
-| [NathanBnm](https://github.com/NathanBnm)   | French 🇫🇷 |
-| [meisenzahl](https://github.com/meisenzahl) | German 🇩🇪 |
+| Name                                            | Language   |
+| ----------------------------------------------- | ---------- |
+| [NathanBnm](https://github.com/NathanBnm)       | French 🇫🇷  |
+| [meisenzahl](https://github.com/meisenzahl)     | German 🇩🇪  |
+| [mirkobrombin](https://github.com/mirkobrombin) | Italian 🇮🇹 |
+| [onerbs](https://github.com/onerbs)             | Spanish 🇪🇸 |
 
 ## License
 
