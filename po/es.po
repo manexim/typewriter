@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.manexim.typewriter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-16 08:50-0500\n"
+"POT-Creation-Date: 2020-08-27 20:40+0200\n"
 "PO-Revision-Date: 2020-05-16 08:50-0500\n"
 "Last-Translator: Alejandro Elí <@onerbs>\n"
 "Language-Team: none\n"
@@ -17,17 +17,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/Views/TypewriterView.vala:53 src/MainWindow.vala:66
+#: src/Views/TypewriterView.vala:63 src/MainWindow.vala:168
 #, c-format
 msgid "%u characters"
 msgstr "%u carácteres"
 
-#: src/Views/TypewriterView.vala:54 src/MainWindow.vala:67
+#: src/Views/TypewriterView.vala:64 src/MainWindow.vala:169
 #, c-format
 msgid "%u words"
 msgstr "%u palabras"
 
-#: src/Views/TypewriterView.vala:55 src/MainWindow.vala:68
+#: src/Views/TypewriterView.vala:65 src/MainWindow.vala:170
 #, c-format
 msgid "%u min read"
 msgstr "Lectura de %u minutos"
+
+#: src/MainWindow.vala:95
+msgid "Zoom out"
+msgstr ""
+
+#: src/MainWindow.vala:103
+msgid "Default zoom level"
+msgstr ""
+
+#: src/MainWindow.vala:115
+msgid "Zoom in"
+msgstr ""
+
+#: src/MainWindow.vala:142
+msgid "Menu"
+msgstr ""
