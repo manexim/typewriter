@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Application : Granite.Application {
+public class Application : Gtk.Application {
     private static Application? _instance;
     private MainWindow window;
     private Models.Font _default_font;

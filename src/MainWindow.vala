@@ -24,8 +24,60 @@ public class MainWindow : Gtk.ApplicationWindow {
     private Gtk.HeaderBar headerbar;
     private Controllers.TypewriterController typewriter;
 
-    public MainWindow (Gtk.Application application) {
-        this.application = application;
+    public Application app { get; construct; }
+
+    public SimpleActionGroup actions { get; construct; }
+
+    public const string ACTION_PREFIX = "win.";
+    public const string ACTION_QUIT = "action-quit";
+    public const string ACTION_FULLSCREEN = "action-fullscreen";
+    public const string ACTION_ZOOM_OUT_FONT = "action-zoom-out-font";
+    public const string ACTION_ZOOM_DEFAULT_FONT = "action-zoom-default-font";
+    public const string ACTION_ZOOM_IN_FONT = "action-zoom-in-font";
+
+    private static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
+
+    private const ActionEntry[] ACTION_ENTRIES = {
+        { ACTION_QUIT, action_quit },
+        { ACTION_FULLSCREEN, action_fullscreen },
+        { ACTION_ZOOM_OUT_FONT, action_zoom_out_font },
+        { ACTION_ZOOM_DEFAULT_FONT, action_zoom_default_font },
+        { ACTION_ZOOM_IN_FONT, action_zoom_in_font }
+    };
+
+    public MainWindow (Application app) {
+        Object (
+            app: app
+        );
+    }
+
+    static construct {
+        action_accelerators[ACTION_QUIT] = "<Control>q";
+        action_accelerators[ACTION_QUIT] = "<Control>w";
+        action_accelerators[ACTION_FULLSCREEN] = "F11";
+        action_accelerators[ACTION_ZOOM_OUT_FONT] = "<Control>minus";
+        action_accelerators[ACTION_ZOOM_OUT_FONT] = "<Control>KP_Subtract";
+        action_accelerators[ACTION_ZOOM_DEFAULT_FONT] = "<Control>0";
+        action_accelerators[ACTION_ZOOM_DEFAULT_FONT] = "<Control>KP_0";
+        action_accelerators[ACTION_ZOOM_IN_FONT] = "<Control>plus";
+        action_accelerators[ACTION_ZOOM_IN_FONT] = "<Control>equal";
+        action_accelerators[ACTION_ZOOM_IN_FONT] = "<Control>KP_Add";
+    }
+
+    construct {
+        actions = new SimpleActionGroup ();
+        actions.add_action_entries (ACTION_ENTRIES, this);
+        insert_action_group ("win", actions);
+
+        set_application (app);
+
+        foreach (var action in action_accelerators.get_keys ()) {
+            var accels_array = action_accelerators[action].to_array ();
+            accels_array += null;
+
+            app.set_accels_for_action (ACTION_PREFIX + action, accels_array);
+        }
+
         get_style_context ().add_class ("rounded");
 
         settings = Services.Settings.get_default ();
@@ -36,24 +88,33 @@ public class MainWindow : Gtk.ApplicationWindow {
         };
         headerbar.get_style_context ().add_class ("default-decoration");
 
-        var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
-        zoom_out_button.clicked.connect (() => {
-            settings.zoom -= 10;
-        });
+        var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU) {
+            action_name = ACTION_PREFIX + ACTION_ZOOM_OUT_FONT,
+            tooltip_markup = Granite.markup_accel_tooltip (
+                application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_OUT_FONT),
+                _("Zoom out")
+            )
+        };
 
-        var zoom_default_button = new Gtk.Button.with_label ("%d%%".printf (settings.zoom));
-        zoom_default_button.clicked.connect (() => {
-            settings.zoom = 100;
-        });
+        var zoom_default_button = new Gtk.Button.with_label ("%d%%".printf (settings.zoom)) {
+            action_name = ACTION_PREFIX + ACTION_ZOOM_DEFAULT_FONT,
+            tooltip_markup = Granite.markup_accel_tooltip (
+                application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_DEFAULT_FONT),
+                _("Default zoom level")
+            )
+        };
 
         settings.notify["zoom"].connect (() => {
             zoom_default_button.label = "%d%%".printf (settings.zoom);
         });
 
-        var zoom_in_button = new Gtk.Button.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU);
-        zoom_in_button.clicked.connect (() => {
-            settings.zoom += 10;
-        });
+        var zoom_in_button = new Gtk.Button.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU) {
+            action_name = ACTION_PREFIX + ACTION_ZOOM_IN_FONT,
+            tooltip_markup = Granite.markup_accel_tooltip (
+                application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_IN_FONT),
+                _("Zoom in")
+            )
+        };
 
         var font_size_grid = new Gtk.Grid () {
             column_homogeneous = true,
@@ -93,15 +154,6 @@ public class MainWindow : Gtk.ApplicationWindow {
         typewriter.model.notify.connect (update);
 
         update ();
-
-        key_press_event.connect ((e) => {
-            uint keycode = e.hardware_keycode;
-            if (match_keycode (Gdk.Key.F11, keycode)) {
-                is_fullscreen = !is_fullscreen;
-            }
-
-            return false;
-        });
 
         delete_event.connect (() => {
             save_settings ();
@@ -154,19 +206,6 @@ public class MainWindow : Gtk.ApplicationWindow {
         }
     }
 
-    private bool match_keycode (uint keyval, uint code) {
-        Gdk.KeymapKey[] keys;
-        Gdk.Keymap keymap = Gdk.Keymap.get_for_display (Gdk.Display.get_default ());
-        if (keymap.get_entries_for_keyval (keyval, out keys)) {
-            foreach (var key in keys) {
-                if (code == key.keycode)
-                    return true;
-                }
-            }
-
-        return false;
-    }
-
     private bool is_fullscreen {
         get {
             return settings.window_fullscreen;
@@ -180,5 +219,25 @@ public class MainWindow : Gtk.ApplicationWindow {
                 unfullscreen ();
             }
         }
+    }
+
+    private void action_quit () {
+        destroy ();
+    }
+
+    private void action_fullscreen () {
+        is_fullscreen = !is_fullscreen;
+    }
+
+    private void action_zoom_out_font () {
+        settings.zoom -= 10;
+    }
+
+    private void action_zoom_default_font () {
+        settings.zoom = 100;
+    }
+
+    private void action_zoom_in_font () {
+        settings.zoom += 10;
     }
 }
