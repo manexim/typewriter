@@ -230,14 +230,26 @@ public class MainWindow : Gtk.ApplicationWindow {
     }
 
     private void action_zoom_out_font () {
-        settings.zoom -= 10;
+        if (settings.zoom >= 30) {
+            settings.zoom -= 10;
+        } else {
+            Gdk.beep ();
+        }
     }
 
     private void action_zoom_default_font () {
-        settings.zoom = 100;
+        if (settings.zoom != 100) {
+            settings.zoom = 100;
+        } else {
+            Gdk.beep ();
+        }
     }
 
     private void action_zoom_in_font () {
-        settings.zoom += 10;
+        if (settings.zoom < 400) {
+            settings.zoom += 10;
+        } else {
+            Gdk.beep ();
+        }
     }
 }
