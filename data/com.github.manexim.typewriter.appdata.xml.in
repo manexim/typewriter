@@ -16,6 +16,30 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2020-08-28" version="0.4.0">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Respect an OS-wide dark preference</li>
+          <li>Add actions</li>
+          <li>Add audio feedback if zoom is not possible</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>Update translations</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+        </ul>
+        <p>Translations:</p>
+        <ul>
+          <li>French (by NathanBnm)</li>
+          <li>German (by meisenzahl)</li>
+          <li>Italian (by mirkobrombin)</li>
+          <li>Spanish (by onerbs)</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-08-23" version="0.3.2">
       <description>
         <p>New:</p>
