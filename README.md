@@ -93,6 +93,7 @@ Your commit message should describe what the commit, when applied, does to the c
 | [meisenzahl](https://github.com/meisenzahl)     | German 🇩🇪  |
 | [mirkobrombin](https://github.com/mirkobrombin) | Italian 🇮🇹 |
 | [onerbs](https://github.com/onerbs)             | Spanish 🇪🇸 |
+| [Vistaus ](https://github.com/Vistausk)         | Dutch 🇳🇱   |
 
 ## License
 
