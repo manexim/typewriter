@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 13:58+0100\n"
+"PO-Revision-Date: 2020-09-01 18:16+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:7
+#: data/com.github.manexim.typewriter.desktop.in:4
+#: data/com.github.manexim.typewriter.desktop.in:5
+msgid "Typewriter"
+msgstr "Typmachine"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:8
+#: data/com.github.manexim.typewriter.desktop.in:6
+msgid "A minimal writer with autosave"
+msgstr "Een minimale tekstbewerker die alles automatisch opslaat"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:10
+msgid "Get lost in typing and don't worry about losing your precious work."
+msgstr "Typ tekst en vergeet alles om je heen - je werk wordt automatisch opgeslagen."
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:21
+msgid "Use bottom bar instead of overlay"
+msgstr "Statusbalk in plaats van een zwevende balk"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:26
+msgid "Update icon branding"
+msgstr "Pictogram bijgewerkt"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:31
+msgid "Update icon"
+msgstr "Pictogram bijgewerkt"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:36
+msgid "Initial release"
+msgstr "Initiële uitgave"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:46
+msgid "Manexim"
+msgstr "Manexim"
+
+#: data/com.github.manexim.typewriter.desktop.in:8
+msgid "com.github.manexim.typewriter"
+msgstr "com.github.manexim.typewriter"
