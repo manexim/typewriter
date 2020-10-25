@@ -43,12 +43,11 @@
 
 These dependencies must be present before building:
 
--   `elementary-sdk`
--   `meson (>=0.40)`
--   `valac (>=0.40)`
--   `libgtk-3-dev`
 -   `libgranite-dev`
+-   `libgtk-3-dev`
 -   `libgtksourceview-3.0-dev`
+-   `meson`
+-   `valac`
 
 ### Building
 
