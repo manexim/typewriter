@@ -16,6 +16,29 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2020-10-25" version="0.4.2">
+      <description>
+        <p>New:</p>
+        <ul>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>Update translations</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+        </ul>
+        <p>Translations:</p>
+        <ul>
+          <li>French (by NathanBnm)</li>
+          <li>German (by meisenzahl)</li>
+          <li>Italian (by mirkobrombin)</li>
+          <li>Spanish (by onerbs)</li>
+          <li>Dutch (by Vistausk)</li>
+          <li>Russian (by logdimov)</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-09-04" version="0.4.1">
       <description>
         <p>New:</p>
