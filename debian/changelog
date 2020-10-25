@@ -1,3 +1,19 @@
+com.github.manexim.typewriter (0.4.3) urgency=medium
+
+[NEW]
+[IMPROVED]
+[FIXED]
+ * Fix typo in name of translator
+[TRANSLATIONS]
+ * French (by NathanBnm)
+ * German (by meisenzahl)
+ * Italian (by mirkobrombin)
+ * Spanish (by onerbs)
+ * Dutch (by Vistaus)
+ * Russian (by logdimov)
+
+ -- Marius Meisenzahl <mariusmeisenzahl@gmail.com>  Sun, 25 Oct 2020 10:43:02 +0100
+
 com.github.manexim.typewriter (0.4.2) bionic; urgency=medium
 
 [NEW]
