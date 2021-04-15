@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/manexim/typewriter">
-    <img src="https://img.shields.io/travis/manexim/typewriter.svg">
+  <a href="https://github.com/manexim/typewriter/actions/workflows/main.yml">
+    <img src="https://github.com/manexim/typewriter/workflows/CI/badge.svg">
   </a>
   <a href="https://github.com/manexim/typewriter/releases/">
     <img src="https://img.shields.io/github/release/manexim/typewriter.svg">
