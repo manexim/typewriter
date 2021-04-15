@@ -30,7 +30,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: bilelmoussaoui/flatpak-github-actions@master
       with:
-        bundle: "typewriter.flatpak"
+        bundle: "com.github.manexim.typewriter.flatpak"
         manifest-path: "com.github.manexim.typewriter.yml"
         run-tests: "true"
         repository-name: "elementary"
