@@ -34,7 +34,7 @@ jobs:
         manifest-path: "com.github.manexim.typewriter.yml"
         run-tests: "true"
         repository-name: "elementary"
-        repository-url: "https://flatpak.elementary.io/elementary.flatpakrepo"
+        repository-url: "https://flatpak.elementary.io/repo.flatpakrepo"
         cache-key: "flatpak-builder-${{ github.sha }}"
 
   lint:
