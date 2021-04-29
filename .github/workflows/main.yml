@@ -4,18 +4,15 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     container:
-      image: elementary/docker:stable
-
+      image: elementary/docker:unstable
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Install Dependencies
       run: |
         apt update
-        apt install -y libgranite-dev libgtk-3-dev libgtksourceview-3.0-dev meson valac
+        apt install -y libgranite-dev libgtk-3-dev libgtksourceview-3.0-dev libhandy-1-dev meson valac
     - name: Build
       env:
         DESTDIR: out
@@ -24,10 +21,24 @@ jobs:
         ninja -C build
         ninja -C build install
 
-  lint:
-
+  flatpak:
     runs-on: ubuntu-latest
-
+    container:
+      image: docker.io/bilelmoussaoui/flatpak-github-actions:elementary-juno
+      options: --privileged
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@master
+      with:
+        bundle: "com.github.manexim.typewriter.flatpak"
+        manifest-path: "com.github.manexim.typewriter.yml"
+        run-tests: "true"
+        repository-name: "elementary"
+        repository-url: "https://flatpak.elementary.io/repo.flatpakrepo"
+        cache-key: "flatpak-builder-${{ github.sha }}"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
     - uses: elementary/actions/vala-lint@master

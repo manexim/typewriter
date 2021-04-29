@@ -19,9 +19,9 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class MainWindow : Gtk.ApplicationWindow {
+public class MainWindow : Hdy.Window {
     private Services.Settings settings;
-    private Gtk.HeaderBar headerbar;
+    private Hdy.HeaderBar headerbar;
     private Controllers.TypewriterController typewriter;
 
     public Application app { get; construct; }
@@ -65,6 +65,8 @@ public class MainWindow : Gtk.ApplicationWindow {
     }
 
     construct {
+        Hdy.init ();
+
         actions = new SimpleActionGroup ();
         actions.add_action_entries (ACTION_ENTRIES, this);
         insert_action_group ("win", actions);
@@ -78,15 +80,14 @@ public class MainWindow : Gtk.ApplicationWindow {
             app.set_accels_for_action (ACTION_PREFIX + action, accels_array);
         }
 
-        get_style_context ().add_class ("rounded");
-
         settings = Services.Settings.get_default ();
         load_settings ();
 
-        headerbar = new Gtk.HeaderBar () {
-            show_close_button = true
+        headerbar = new Hdy.HeaderBar () {
+            decoration_layout = "close:",
+            show_close_button = true,
+            title = Config.APP_NAME
         };
-        headerbar.get_style_context ().add_class ("default-decoration");
 
         var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU) {
             action_name = ACTION_PREFIX + ACTION_ZOOM_OUT_FONT,
@@ -145,11 +146,16 @@ public class MainWindow : Gtk.ApplicationWindow {
 
         headerbar.pack_end (app_menu);
 
-        set_titlebar (headerbar);
-        title = Config.APP_NAME;
-
         typewriter = new Controllers.TypewriterController ();
-        add (typewriter.view);
+
+        var main_layout = new Gtk.Grid ();
+        main_layout.attach (headerbar, 0, 0);
+        main_layout.attach (typewriter.view, 0, 1);
+
+        var window_handle = new Hdy.WindowHandle ();
+        window_handle.add (main_layout);
+
+        add (window_handle);
 
         typewriter.model.notify.connect (update);
 
