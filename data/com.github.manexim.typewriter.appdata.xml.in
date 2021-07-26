@@ -213,6 +213,7 @@
     <value key="x-appcenter-color-primary-text">#333</value>
     <!-- Suggested price in USD; just a suggestion, NOT a minimum. -->
     <value key="x-appcenter-suggested-price">5</value>
+    <value key="x-appcenter-stripe">pk_live_qZp2vPHK4sgLn3D0WrU5oDSS001IuweZie</value>
   </custom>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
