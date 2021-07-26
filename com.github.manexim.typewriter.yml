@@ -1,6 +1,6 @@
 app-id: com.github.manexim.typewriter
 runtime: io.elementary.Platform
-runtime-version: '0.1.0'
+runtime-version: '6'
 sdk: io.elementary.Sdk
 command: com.github.manexim.typewriter
 finish-args:
