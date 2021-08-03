@@ -24,14 +24,29 @@
 </p>
 
 <p align="center">
-  <img src="data/screenshots/000.png">
   <table>
+    <tr>
+      <td>
+        <img src="data/screenshots/000.png">
+      </td>
+      <td>
+        <img src="data/screenshots/000-dark.png">
+      </td>
+    </tr>
     <tr>
       <td>
         <img src="data/screenshots/001.png">
       </td>
       <td>
+        <img src="data/screenshots/001-dark.png">
+      </td>
+    </tr>
+    <tr>
+      <td>
         <img src="data/screenshots/002.png">
+      </td>
+      <td>
+        <img src="data/screenshots/002-dark.png">
       </td>
     </tr>
   </table>
