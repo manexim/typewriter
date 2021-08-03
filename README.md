@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/manexim/typewriter">
-    <img src="https://img.shields.io/travis/manexim/typewriter.svg">
+  <a href="https://github.com/manexim/typewriter/actions/workflows/main.yml">
+    <img src="https://github.com/manexim/typewriter/workflows/CI/badge.svg">
   </a>
   <a href="https://github.com/manexim/typewriter/releases/">
     <img src="https://img.shields.io/github/release/manexim/typewriter.svg">
@@ -24,14 +24,29 @@
 </p>
 
 <p align="center">
-  <img src="data/screenshots/000.png">
   <table>
+    <tr>
+      <td>
+        <img src="data/screenshots/000.png">
+      </td>
+      <td>
+        <img src="data/screenshots/000-dark.png">
+      </td>
+    </tr>
     <tr>
       <td>
         <img src="data/screenshots/001.png">
       </td>
       <td>
+        <img src="data/screenshots/001-dark.png">
+      </td>
+    </tr>
+    <tr>
+      <td>
         <img src="data/screenshots/002.png">
+      </td>
+      <td>
+        <img src="data/screenshots/002-dark.png">
       </td>
     </tr>
   </table>
@@ -46,6 +61,7 @@ These dependencies must be present before building:
 -   `libgranite-dev`
 -   `libgtk-3-dev`
 -   `libgtksourceview-3.0-dev`
+-   `libhandy-1-dev` >=1.0.0
 -   `meson`
 -   `valac`
 
