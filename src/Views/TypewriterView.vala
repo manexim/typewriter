@@ -39,6 +39,10 @@ public class Views.TypewriterView : Gtk.Grid {
         };
         scrolled.add (editor);
 
+        editor.map.connect (() => {
+            editor.grab_focus ();
+        });
+
         editor.override_font (Pango.FontDescription.from_string (font.font));
         font.notify.connect (() => {
             editor.override_font (Pango.FontDescription.from_string (font.font));
