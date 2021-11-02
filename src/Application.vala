@@ -21,7 +21,7 @@
 
 public class Application : Gtk.Application {
     private static Application? _instance;
-    private MainWindow window;
+    private MainWindow? window = null;
     private Models.Font _default_font;
     private Models.Font _current_font;
     private Services.Settings settings;
@@ -67,22 +67,26 @@ public class Application : Gtk.Application {
     }
 
     protected override void activate () {
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
+        if (window == null) {
+            var granite_settings = Granite.Settings.get_default ();
+            var gtk_settings = Gtk.Settings.get_default ();
 
-        gtk_settings.gtk_application_prefer_dark_theme = (
-            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-        );
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
             gtk_settings.gtk_application_prefer_dark_theme = (
                 granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
             );
-        });
 
-        window = new MainWindow (this);
+            granite_settings.notify["prefers-color-scheme"].connect (() => {
+                gtk_settings.gtk_application_prefer_dark_theme = (
+                    granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+                );
+            });
 
-        window.show_all ();
+            window = new MainWindow (this);
+
+            window.show_all ();
+        } else {
+            window.present ();
+        }
     }
 
     public static int main (string[] args) {
