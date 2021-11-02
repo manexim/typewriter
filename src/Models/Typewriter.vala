@@ -42,7 +42,7 @@ public class Models.Typewriter : Object {
 
                     characters = text_stripped.length;
                     words = text_stripped.split (" ").length;
-                    read_time = (uint) ((1.0 * words / Config.WORDS_PER_MINUTE) + 0.5);
+                    read_time = (uint) ((1.0 * words / Constants.WORDS_PER_MINUTE) + 0.5);
                 }
             } catch (RegexError e) {
                 stderr.printf (e.message);
@@ -54,7 +54,7 @@ public class Models.Typewriter : Object {
         owned get {
             return File.new_build_filename (
                 Environment.get_user_data_dir (),
-                Config.APP_ID
+                Constants.APP_ID
             );
         }
     }
@@ -63,7 +63,7 @@ public class Models.Typewriter : Object {
         owned get {
             return File.new_build_filename (
                 Environment.get_user_data_dir (),
-                Config.APP_ID,
+                Constants.APP_ID,
                 "autosave.md"
             );
         }

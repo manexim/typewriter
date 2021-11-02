@@ -19,11 +19,24 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-namespace Config {
-    public const string APP_ID = "com.github.manexim.typewriter";
-    public const string APP_AUTHOR = "Manexim";
-    public const string APP_NAME = "Typewriter";
-    public const string APP_VERSION = "0.5.0";
+namespace Constants {
+    private const string APP_ID = "@APP_ID@";
+    private const string APP_AUTHOR = "Manexim";
+    private const string APP_NAME = "Typewriter";
+    private const string APP_VERSION = "@APP_VERSION@";
 
-    public const uint WORDS_PER_MINUTE = 265;
+    private const uint WORDS_PER_MINUTE = 265;
+
+    private const string GETTEXT_PACKAGE = "@GETTEXT_PACKAGE@";
+    private const string LOCALEDIR = "@LOCALEDIR@";
+
+    private const string ZOOM_OUT = _("Zoom out");
+    private const string DEFAULT_ZOOM_LEVEL = _("Default zoom level");
+    private const string ZOOM_IN = _("Zoom in");
+
+    private const string MENU = _("Menu");
+
+    private const string NUMBER_CHARACTERS = _("%u characters");
+    private const string NUMBER_WORDS = _("%u words");
+    private const string NUMBER_MIN_READ = _("%u min read");
 }

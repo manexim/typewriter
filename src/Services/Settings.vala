@@ -40,6 +40,6 @@ public class Services.Settings : Granite.Services.Settings {
     public int zoom { get; set; }
 
     private Settings () {
-        base (Config.APP_ID);
+        base (Constants.APP_ID);
     }
 }

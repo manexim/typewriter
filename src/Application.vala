@@ -26,6 +26,13 @@ public class Application : Gtk.Application {
     private Models.Font _current_font;
     private Services.Settings settings;
 
+    construct {
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (Constants.GETTEXT_PACKAGE);
+    }
+
     public static Application instance {
         get {
             if (_instance == null) {
@@ -38,7 +45,7 @@ public class Application : Gtk.Application {
 
     private Application () {
         Object (
-            application_id: Config.APP_ID,
+            application_id: Constants.APP_ID,
             flags: ApplicationFlags.FLAGS_NONE
         );
 
@@ -67,11 +74,6 @@ public class Application : Gtk.Application {
     }
 
     protected override void activate () {
-        Intl.setlocale (LocaleCategory.ALL, "");
-        GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-        GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-        GLib.Intl.textdomain (GETTEXT_PACKAGE);
-
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
 
