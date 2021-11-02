@@ -3,5 +3,5 @@ src/Models/Typewriter.vala
 src/Services/Settings.vala
 src/Views/TypewriterView.vala
 src/Application.vala
-src/Constants.vala.in
 src/MainWindow.vala
+src/Strings.vala

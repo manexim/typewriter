@@ -16,7 +16,8 @@ sources = [
     'Models/Typewriter.vala',
     'Services/Settings.vala',
     'Views/TypewriterView.vala',
-    'MainWindow.vala'
+    'MainWindow.vala',
+    'Strings.vala'
 ]
 
 executable(
