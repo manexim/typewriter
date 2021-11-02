@@ -152,10 +152,7 @@ public class MainWindow : Hdy.Window {
         main_layout.attach (headerbar, 0, 0);
         main_layout.attach (typewriter.view, 0, 1);
 
-        var window_handle = new Hdy.WindowHandle ();
-        window_handle.add (main_layout);
-
-        add (window_handle);
+        add (main_layout);
 
         typewriter.model.notify.connect (update);
 

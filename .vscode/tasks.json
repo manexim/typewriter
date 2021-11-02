@@ -6,7 +6,7 @@
         {
             "label": "Build & Run",
             "type": "shell",
-            "command": "./app",
+            "command": "./app build && ./app install && ./app run",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
