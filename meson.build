@@ -8,7 +8,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 
 gtk_plus_3_dep = dependency('gtk+-3.0')
 granite_dep = dependency('granite')
-gtksourceview_dep = dependency('gtksourceview-3.0')
+gtksourceview_dep = dependency('gtksourceview-4')
 libhandy_dep = dependency('libhandy-1', version: '>=1.0.0')
 
 dependencies = [
