@@ -110,6 +110,7 @@ Your commit message should describe what the commit, when applied, does to the c
 | [onerbs](https://github.com/onerbs)             | Spanish 🇪🇸 |
 | [Vistaus](https://github.com/Vistaus)           | Dutch 🇳🇱   |
 | [logdimov](https://github.com/logdimov)         | Russian 🇷🇺 |
+| [milotype](https://github.com/milotype)         | Croatian 🇭🇷 |
 
 ## License
 
