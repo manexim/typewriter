@@ -60,7 +60,7 @@ These dependencies must be present before building:
 
 -   `libgranite-dev`
 -   `libgtk-3-dev`
--   `libgtksourceview-3.0-dev`
+-   `libgtksourceview-4-dev`
 -   `libhandy-1-dev` >=1.0.0
 -   `meson`
 -   `valac`
@@ -110,6 +110,7 @@ Your commit message should describe what the commit, when applied, does to the c
 | [onerbs](https://github.com/onerbs)             | Spanish 🇪🇸 |
 | [Vistaus](https://github.com/Vistaus)           | Dutch 🇳🇱   |
 | [logdimov](https://github.com/logdimov)         | Russian 🇷🇺 |
+| [milotype](https://github.com/milotype)         | Croatian 🇭🇷 |
 
 ## License
 

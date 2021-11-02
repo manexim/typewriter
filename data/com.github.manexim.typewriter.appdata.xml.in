@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019 Manexim -->
+<!-- Copyright 2019-2021 Manexim -->
 <component type="desktop">
   <id>com.github.manexim.typewriter</id>
   <metadata_license>CC0</metadata_license>
@@ -16,6 +16,34 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2021-11-02" version="0.6.0">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Grab focus to start typing immediately</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>Remove Flatpak sandbox hole to query dark style preference</li>
+          <li>Update dependencies</li>
+          <li>Update translations</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Fix window handling</li>
+        </ul>
+        <p>Translations:</p>
+        <ul>
+          <li>French (by NathanBnm)</li>
+          <li>German (by meisenzahl)</li>
+          <li>Italian (by mirkobrombin)</li>
+          <li>Spanish (by onerbs)</li>
+          <li>Dutch (by Vistaus)</li>
+          <li>Russian (by logdimov)</li>
+          <li>Croatian (by milotype)</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-08-03" version="0.5.0">
       <description>
         <p>New:</p>
