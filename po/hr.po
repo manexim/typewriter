@@ -1,0 +1,50 @@
+# Croatian translations for com.github.manexim.typewriter package.
+# Copyright (C) 2021 THE com.github.manexim.typewriter'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.manexim.typewriter package.
+# Milo Ivir <mail@milotype.de>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.manexim.typewriter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-27 20:40+0200\n"
+"PO-Revision-Date: 2021-09-06 12:22+0100\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: none\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: src/Views/TypewriterView.vala:63 src/MainWindow.vala:168
+#, c-format
+msgid "%u characters"
+msgstr "Broj znakova: %u"
+
+#: src/Views/TypewriterView.vala:64 src/MainWindow.vala:169
+#, c-format
+msgid "%u words"
+msgstr "Broj riječi: %u"
+
+#: src/Views/TypewriterView.vala:65 src/MainWindow.vala:170
+#, c-format
+msgid "%u min read"
+msgstr "Vrijeme za čitanje: %u min"
+
+#: src/MainWindow.vala:95
+msgid "Zoom out"
+msgstr "Umanji"
+
+#: src/MainWindow.vala:103
+msgid "Default zoom level"
+msgstr "Standardno uvećanje"
+
+#: src/MainWindow.vala:115
+msgid "Zoom in"
+msgstr "Uvećaj"
+
+#: src/MainWindow.vala:142
+msgid "Menu"
+msgstr "Izbornik"
