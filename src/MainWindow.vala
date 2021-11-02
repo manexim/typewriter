@@ -86,7 +86,7 @@ public class MainWindow : Hdy.Window {
         headerbar = new Hdy.HeaderBar () {
             decoration_layout = "close:",
             show_close_button = true,
-            title = Config.APP_NAME
+            title = Constants.APP_NAME
         };
 
         var zoom_out_button = new Gtk.Button.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU) {

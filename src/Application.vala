@@ -38,7 +38,7 @@ public class Application : Gtk.Application {
 
     private Application () {
         Object (
-            application_id: Config.APP_ID,
+            application_id: Constants.APP_ID,
             flags: ApplicationFlags.FLAGS_NONE
         );
 
