@@ -16,6 +16,30 @@
       <binary>com.github.manexim.typewriter</binary>
   </provides>
   ​<releases>
+    <release date="2021-11-16" version="0.6.1">
+      <description>
+        <p>New:</p>
+        <ul>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Hotfix for handling of dark style preference</li>
+        </ul>
+        <p>Translations:</p>
+        <ul>
+          <li>French (by NathanBnm)</li>
+          <li>German (by meisenzahl)</li>
+          <li>Italian (by mirkobrombin)</li>
+          <li>Spanish (by onerbs)</li>
+          <li>Dutch (by Vistaus)</li>
+          <li>Russian (by logdimov)</li>
+          <li>Croatian (by milotype)</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-11-02" version="0.6.0">
       <description>
         <p>New:</p>
