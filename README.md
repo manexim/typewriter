@@ -18,7 +18,7 @@
   <a href="https://github.com/manexim/typewriter/releases/">
     <img src="https://img.shields.io/github/release/manexim/typewriter.svg">
   </a>
-  <a href="https://github.com/manexim/typewriter/blob/master/COPYING">
+  <a href="https://github.com/manexim/typewriter/blob/main/COPYING">
     <img src="https://img.shields.io/github/license/manexim/typewriter.svg">
   </a>
 </p>
@@ -60,7 +60,7 @@ These dependencies must be present before building:
 
 -   `libgranite-dev`
 -   `libgtk-3-dev`
--   `libgtksourceview-3.0-dev`
+-   `libgtksourceview-4-dev`
 -   `libhandy-1-dev` >=1.0.0
 -   `meson`
 -   `valac`
@@ -90,10 +90,10 @@ If you want to contribute to typewriter and make it better, your help is very we
 
 -   Create a personal fork of this project on GitHub.
 -   Clone the fork on your local machine. Your remote repo on GitHub is called `origin`.
--   Create a new branch to work on. Branch from `master`!
+-   Create a new branch to work on. Branch from `main`!
 -   Implement/fix your feature.
 -   Push your branch to your fork on GitHub, the remote `origin`.
--   From your fork open a pull request in the correct branch. Target the `master` branch!
+-   From your fork open a pull request in the correct branch. Target the `main` branch!
 
 And last but not least: Always write your commit messages in the present tense.
 Your commit message should describe what the commit, when applied, does to the code – not what you did to the code.
@@ -110,6 +110,7 @@ Your commit message should describe what the commit, when applied, does to the c
 | [onerbs](https://github.com/onerbs)             | Spanish 🇪🇸 |
 | [Vistaus](https://github.com/Vistaus)           | Dutch 🇳🇱   |
 | [logdimov](https://github.com/logdimov)         | Russian 🇷🇺 |
+| [milotype](https://github.com/milotype)         | Croatian 🇭🇷 |
 
 ## License
 

@@ -1,4 +1,4 @@
-project('com.github.manexim.typewriter', 'vala', 'c', version: '0.5.0')
+project('com.github.manexim.typewriter', 'vala', 'c', version: '0.6.1')
 
 # Include the translations module
 i18n = import('i18n')
