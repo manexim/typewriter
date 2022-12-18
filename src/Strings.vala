@@ -1,4 +1,5 @@
- * Copyright (c) 2019-2021 Manexim (https://github.com/manexim)
+/*
+ * Copyright (c) 2021 Manexim (https://github.com/manexim)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,17 +19,7 @@
  * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
-namespace Constants {
-    public const string APP_ID = "@APP_ID@";
-    public const string APP_AUTHOR = "Manexim";
-    public const string APP_NAME = "Typewriter";
-    public const string APP_VERSION = "@APP_VERSION@";
-
-    public const uint WORDS_PER_MINUTE = 265;
-    
-    private const string GETTEXT_PACKAGE = "@GETTEXT_PACKAGE@";
-    private const string LOCALEDIR = "@LOCALEDIR@";
-
+namespace Strings {
     private const string ZOOM_OUT = _("Zoom out");
     private const string DEFAULT_ZOOM_LEVEL = _("Default zoom level");
     private const string ZOOM_IN = _("Zoom in");

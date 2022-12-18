@@ -26,6 +26,13 @@ public class Application : Gtk.Application {
     private Models.Font _current_font;
     private Services.Settings settings;
 
+    construct {
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (Constants.GETTEXT_PACKAGE);
+    }
+
     public static Application instance {
         get {
             if (_instance == null) {

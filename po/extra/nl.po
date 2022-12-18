@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 13:58+0100\n"
+"POT-Creation-Date: 2021-11-02 10:03+0000\n"
 "PO-Revision-Date: 2020-09-01 18:16+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl\n"
 
 #: data/com.github.manexim.typewriter.appdata.xml.in:7
 #: data/com.github.manexim.typewriter.desktop.in:4
@@ -31,28 +31,167 @@ msgstr "Een minimale tekstbewerker die alles automatisch opslaat"
 
 #: data/com.github.manexim.typewriter.appdata.xml.in:10
 msgid "Get lost in typing and don't worry about losing your precious work."
-msgstr "Typ tekst en vergeet alles om je heen - je werk wordt automatisch opgeslagen."
+msgstr ""
+"Typ tekst en vergeet alles om je heen - je werk wordt automatisch opgeslagen."
 
 #: data/com.github.manexim.typewriter.appdata.xml.in:21
+#: data/com.github.manexim.typewriter.appdata.xml.in:45
+#: data/com.github.manexim.typewriter.appdata.xml.in:68
+#: data/com.github.manexim.typewriter.appdata.xml.in:91
+#: data/com.github.manexim.typewriter.appdata.xml.in:113
+#: data/com.github.manexim.typewriter.appdata.xml.in:137
+#: data/com.github.manexim.typewriter.appdata.xml.in:158
+#: data/com.github.manexim.typewriter.appdata.xml.in:179
+msgid "New:"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:23
+msgid "Using Hdy.Window for rounded corners"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:24
+msgid "Support dark style preference"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:26
+#: data/com.github.manexim.typewriter.appdata.xml.in:48
+#: data/com.github.manexim.typewriter.appdata.xml.in:71
+#: data/com.github.manexim.typewriter.appdata.xml.in:94
+#: data/com.github.manexim.typewriter.appdata.xml.in:119
+#: data/com.github.manexim.typewriter.appdata.xml.in:141
+#: data/com.github.manexim.typewriter.appdata.xml.in:161
+#: data/com.github.manexim.typewriter.appdata.xml.in:183
+msgid "Improved:"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:29
+#: data/com.github.manexim.typewriter.appdata.xml.in:51
+#: data/com.github.manexim.typewriter.appdata.xml.in:75
+#: data/com.github.manexim.typewriter.appdata.xml.in:98
+#: data/com.github.manexim.typewriter.appdata.xml.in:123
+#: data/com.github.manexim.typewriter.appdata.xml.in:144
+#: data/com.github.manexim.typewriter.appdata.xml.in:165
+#: data/com.github.manexim.typewriter.appdata.xml.in:186
+msgid "Fixed:"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:32
+#: data/com.github.manexim.typewriter.appdata.xml.in:55
+#: data/com.github.manexim.typewriter.appdata.xml.in:78
+#: data/com.github.manexim.typewriter.appdata.xml.in:101
+#: data/com.github.manexim.typewriter.appdata.xml.in:126
+#: data/com.github.manexim.typewriter.appdata.xml.in:147
+#: data/com.github.manexim.typewriter.appdata.xml.in:168
+#: data/com.github.manexim.typewriter.appdata.xml.in:189
+msgid "Translations:"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:34
+#: data/com.github.manexim.typewriter.appdata.xml.in:57
+#: data/com.github.manexim.typewriter.appdata.xml.in:80
+#: data/com.github.manexim.typewriter.appdata.xml.in:103
+#: data/com.github.manexim.typewriter.appdata.xml.in:128
+#: data/com.github.manexim.typewriter.appdata.xml.in:149
+#: data/com.github.manexim.typewriter.appdata.xml.in:170
+#: data/com.github.manexim.typewriter.appdata.xml.in:191
+msgid "French (by NathanBnm)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:35
+#: data/com.github.manexim.typewriter.appdata.xml.in:58
+#: data/com.github.manexim.typewriter.appdata.xml.in:81
+#: data/com.github.manexim.typewriter.appdata.xml.in:104
+#: data/com.github.manexim.typewriter.appdata.xml.in:129
+#: data/com.github.manexim.typewriter.appdata.xml.in:150
+#: data/com.github.manexim.typewriter.appdata.xml.in:171
+#: data/com.github.manexim.typewriter.appdata.xml.in:192
+msgid "German (by meisenzahl)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:36
+#: data/com.github.manexim.typewriter.appdata.xml.in:59
+#: data/com.github.manexim.typewriter.appdata.xml.in:82
+#: data/com.github.manexim.typewriter.appdata.xml.in:105
+#: data/com.github.manexim.typewriter.appdata.xml.in:130
+#: data/com.github.manexim.typewriter.appdata.xml.in:151
+#: data/com.github.manexim.typewriter.appdata.xml.in:172
+msgid "Italian (by mirkobrombin)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:37
+#: data/com.github.manexim.typewriter.appdata.xml.in:60
+#: data/com.github.manexim.typewriter.appdata.xml.in:83
+#: data/com.github.manexim.typewriter.appdata.xml.in:106
+#: data/com.github.manexim.typewriter.appdata.xml.in:131
+#: data/com.github.manexim.typewriter.appdata.xml.in:152
+#: data/com.github.manexim.typewriter.appdata.xml.in:173
+msgid "Spanish (by onerbs)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:38
+#: data/com.github.manexim.typewriter.appdata.xml.in:61
+#: data/com.github.manexim.typewriter.appdata.xml.in:84
+#: data/com.github.manexim.typewriter.appdata.xml.in:107
+msgid "Dutch (by Vistaus)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:39
+#: data/com.github.manexim.typewriter.appdata.xml.in:62
+#: data/com.github.manexim.typewriter.appdata.xml.in:85
+msgid "Russian (by logdimov)"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:53
+msgid "Fix typo in name of translator"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:73
+#: data/com.github.manexim.typewriter.appdata.xml.in:96
+#: data/com.github.manexim.typewriter.appdata.xml.in:121
+#: data/com.github.manexim.typewriter.appdata.xml.in:163
+#, fuzzy
+msgid "Update translations"
+msgstr "Pictogram bijgewerkt"
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:115
+msgid "Respect an OS-wide dark preference"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:116
+msgid "Add actions"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:117
+msgid "Add audio feedback if zoom is not possible"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:139
+msgid "Add rounded window corners"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:181
+msgid "Add menu to set zoom level"
+msgstr ""
+
+#: data/com.github.manexim.typewriter.appdata.xml.in:198
 msgid "Use bottom bar instead of overlay"
 msgstr "Statusbalk in plaats van een zwevende balk"
 
-#: data/com.github.manexim.typewriter.appdata.xml.in:26
+#: data/com.github.manexim.typewriter.appdata.xml.in:203
 msgid "Update icon branding"
 msgstr "Pictogram bijgewerkt"
 
-#: data/com.github.manexim.typewriter.appdata.xml.in:31
+#: data/com.github.manexim.typewriter.appdata.xml.in:208
 msgid "Update icon"
 msgstr "Pictogram bijgewerkt"
 
-#: data/com.github.manexim.typewriter.appdata.xml.in:36
+#: data/com.github.manexim.typewriter.appdata.xml.in:213
 msgid "Initial release"
 msgstr "Initiële uitgave"
 
-#: data/com.github.manexim.typewriter.appdata.xml.in:46
+#: data/com.github.manexim.typewriter.appdata.xml.in:243
 msgid "Manexim"
 msgstr "Manexim"
 
-#: data/com.github.manexim.typewriter.desktop.in:8
-msgid "com.github.manexim.typewriter"
-msgstr "com.github.manexim.typewriter"
+#~ msgid "com.github.manexim.typewriter"
+#~ msgstr "com.github.manexim.typewriter"

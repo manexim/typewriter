@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.manexim.typewriter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-27 20:40+0200\n"
+"POT-Creation-Date: 2021-11-02 10:03+0000\n"
 "PO-Revision-Date: 2020-04-26 16:45+0200\n"
 "Last-Translator: Mirko Brombin <send@mirko.pm>\n"
 "Language-Team: Italian\n"
@@ -18,33 +18,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: src/Views/TypewriterView.vala:63 src/MainWindow.vala:168
+#: src/Strings.vala:23
+msgid "Zoom out"
+msgstr ""
+
+#: src/Strings.vala:24
+msgid "Default zoom level"
+msgstr ""
+
+#: src/Strings.vala:25
+msgid "Zoom in"
+msgstr ""
+
+#: src/Strings.vala:27
+msgid "Menu"
+msgstr ""
+
+#: src/Strings.vala:29
 #, c-format
 msgid "%u characters"
 msgstr "%u caratteri"
 
-#: src/Views/TypewriterView.vala:64 src/MainWindow.vala:169
+#: src/Strings.vala:30
 #, c-format
 msgid "%u words"
 msgstr "%u parole"
 
-#: src/Views/TypewriterView.vala:65 src/MainWindow.vala:170
+#: src/Strings.vala:31
 #, c-format
 msgid "%u min read"
 msgstr "%u minuti di lettura"
-
-#: src/MainWindow.vala:95
-msgid "Zoom out"
-msgstr ""
-
-#: src/MainWindow.vala:103
-msgid "Default zoom level"
-msgstr ""
-
-#: src/MainWindow.vala:115
-msgid "Zoom in"
-msgstr ""
-
-#: src/MainWindow.vala:142
-msgid "Menu"
-msgstr ""

@@ -93,7 +93,7 @@ public class MainWindow : Hdy.Window {
             action_name = ACTION_PREFIX + ACTION_ZOOM_OUT_FONT,
             tooltip_markup = Granite.markup_accel_tooltip (
                 application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_OUT_FONT),
-                _("Zoom out")
+                Strings.ZOOM_OUT
             )
         };
 
@@ -101,7 +101,7 @@ public class MainWindow : Hdy.Window {
             action_name = ACTION_PREFIX + ACTION_ZOOM_DEFAULT_FONT,
             tooltip_markup = Granite.markup_accel_tooltip (
                 application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_DEFAULT_FONT),
-                _("Default zoom level")
+                Strings.DEFAULT_ZOOM_LEVEL
             )
         };
 
@@ -113,7 +113,7 @@ public class MainWindow : Hdy.Window {
             action_name = ACTION_PREFIX + ACTION_ZOOM_IN_FONT,
             tooltip_markup = Granite.markup_accel_tooltip (
                 application.get_accels_for_action (ACTION_PREFIX + ACTION_ZOOM_IN_FONT),
-                _("Zoom in")
+                Strings.ZOOM_IN
             )
         };
 
@@ -140,7 +140,7 @@ public class MainWindow : Hdy.Window {
 
         var app_menu = new Gtk.MenuButton () {
             image = new Gtk.Image.from_icon_name ("open-menu", Gtk.IconSize.LARGE_TOOLBAR),
-            tooltip_text = _("Menu"),
+            tooltip_text = Strings.MENU,
             popover = menu
         };
 
@@ -168,9 +168,9 @@ public class MainWindow : Hdy.Window {
 
     private void update () {
         headerbar.subtitle = "%s • %s • %s".printf (
-            _("%u characters").printf (typewriter.model.characters),
-            _("%u words").printf (typewriter.model.words),
-            _("%u min read").printf (typewriter.model.read_time)
+            Strings.NUMBER_CHARACTERS.printf (typewriter.model.characters),
+            Strings.NUMBER_WORDS.printf (typewriter.model.words),
+            Strings.NUMBER_MIN_READ.printf (typewriter.model.read_time)
         );
     }
 
